@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #0d1117;
+  color: #f0f6fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  background: #161b22;
+  border: 3px solid #30363d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+}
+
+button {
+  background: #58a6ff98;
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #58a6ff;
+}
+
+#chordDisplay {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #58a6ff;
+}
+
+/* Popup styling */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.popup-box {
+  background: #161b22;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 2px solid #30363d;
+  width: 320px;
+  text-align: center;
+}
+
+.popup-box h2 {
+  color: #58a6ff;
+  margin-bottom: 1rem;
+}
+
+.popup-box ul {
+  list-style: none;
+  padding: 0;
+  color: #f0f6fc;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.popup-box li {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}
+
+.popup-box button {
+  background: #238636;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.popup-box button:hover {
+  background: #2ea043;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.logout-button {
+  position: fixed;       /* Fixed relative to viewport */
+  top: 20px;
+  right: 20px;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #58a6ff98;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;         /* Ensure it stays on top */
+  transition: background-color 0.2s ease;
+}
+
+.logout-button:hover {
+  background-color: #58a6ff; /* Slight hover effect */
+}
+
+.sidebar-toggle-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 2000;
+  background: #24292e;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.sidebar-toggle-btn:hover {
+  background: #444c56;
+}

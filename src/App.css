@@ -4,17 +4,20 @@
 .auth-wrapper {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  min-height: 100vh; /* full viewport height */
+  align-items: flex-start; /* moves forms to top */
+  padding-top: 3rem;
+  min-height: 100vh;
+  background: #0d1117; /* dark background */
 }
 
 .auth-inner {
-  max-width: 400px;
-  width: 100%;
+  width: 100%;         /* make forms responsive */
+  max-width: 400px;    /* optional limit */
   padding: 2rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  background-color: #fff;
+  background: none;    /* remove white background */
+  border-radius: 0;    /* remove rounded corners */
+  box-shadow: none;    /* remove shadow */
+  color: #f0f6fc;     /* text color for dark background */
 }
 
 
