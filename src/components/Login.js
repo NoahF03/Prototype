@@ -16,7 +16,7 @@ function Login() {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       toast.success("Logged in successfully!");
 
-      navigate("/dashboard", { state: { fname: "User", lname: "" } }); // adjust if using DB for fname/lname
+      navigate("/dashboard", { state: { fname: "User", lname: "" } }); 
     } catch (error) {
       console.log(error);
       toast.error("Invalid credentials!");

@@ -5,6 +5,8 @@ In order to operate this system please ensure that You have the following instal
 For best results test with google chrome as browser environment.
 Broweser must support getUserMedia.
 
+Unzip the prototype.zip folder
+
 To install please navigate to "PROTOTYPE" folder in CMD
 Run "npm install" ( This will install all dependancies)
 Once install is complete after a minute or two run "npm start"
