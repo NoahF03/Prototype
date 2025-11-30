@@ -14,7 +14,8 @@ function Login() {
 
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
-      // Get display name or pass via state
+      toast.success("Logged in successfully!");
+
       navigate("/dashboard", { state: { fname: "User", lname: "" } }); // adjust if using DB for fname/lname
     } catch (error) {
       console.log(error);

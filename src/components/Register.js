@@ -28,13 +28,12 @@ function Register() {
     }
 
     try {
-      // 1️⃣ Create the user
+      // 1️ Create the user
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-
-      // Show success toast immediately
+      // Show success toast
       toast.success("Successfully registered!");
 
-      // 2️⃣ Save first name and last name in Firestore (optional)
+      // 2️ Save first name and last name in Firestore 
       try {
         await setDoc(doc(db, "users", userCredential.user.uid), {
           fname,
